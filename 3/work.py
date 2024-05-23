@@ -1,11 +1,11 @@
 def is_prime(number: int):
-    for i in range(2, number//2):
+    for i in range(2, number // 2 + 1):
         if number % i == 0:
             return False
     return True
 
 def least_prime_factor(number: int):
-    for i in range(2, number//2):
+    for i in range(2, number // 2 + 1):
         if number % i == 0 and is_prime(i):
             return i
     return number
