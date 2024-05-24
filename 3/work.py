@@ -1,10 +1,10 @@
-def is_prime(number: int):
+def is_prime(number: int) -> bool:
     for i in range(2, number // 2 + 1):
         if number % i == 0:
             return False
     return True
 
-def least_prime_factor(number: int):
+def least_prime_factor(number: int) -> int:
     for i in range(2, number // 2 + 1):
         if number % i == 0 and is_prime(i):
             return i
